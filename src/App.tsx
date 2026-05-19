@@ -167,7 +167,7 @@ function App(): React.JSX.Element {
         </h1>
 
         {/* SECCIÓN SUPERIOR: BUSCADOR + PREVIEW (Objetivo 2) */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8 h-[400px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8 h-auto lg:h-[400px]">
           
           {/* PANEL DE BÚSQUEDA */}
           <div className="lg:col-span-1 bg-slate-800 p-6 rounded-lg shadow-md flex flex-col justify-between">
