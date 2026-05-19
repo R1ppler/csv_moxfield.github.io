@@ -356,13 +356,16 @@ function App(): React.JSX.Element {
           {/* PANEL DE BÚSQUEDA */}
           <div className="lg:col-span-1 bg-slate-800 p-6 rounded-lg shadow-md flex flex-col justify-between">
             <div>
-              <h2 className="text-xl font-semibold mb-4 text-blue-400">
-                1. Buscar carta
+              <h2 className="text-xl font-semibold mb-4 text-blue-400 text-center">
+                Buscar carta
               </h2>
 
               <div className="space-y-4">
+                <div className="h-[5px] flex items-center justify-center"> 
+
+                </div>
                 {/* Nombre */}
-                <div>
+                {/*<div>
                   <label className="block text-sm text-gray-300 mb-1">Nombre</label>
                   <input
                     type="text"
@@ -373,6 +376,7 @@ function App(): React.JSX.Element {
                     onKeyDown={(e) => e.key === 'Enter' && buscarCartaEnScryfall()}
                   />
                 </div>
+                */}
 
                 {/* Inputs (Set y Número) */}
                 <div className="grid grid-cols-3 gap-3">
@@ -400,6 +404,10 @@ function App(): React.JSX.Element {
                       onKeyDown={(e) => e.key === 'Enter' && buscarCartaEnScryfall()}
                     />
                   </div>
+                </div>
+
+                <div className="h-[5px] flex items-center justify-center"> 
+
                 </div>
 
                 <div className="grid grid-cols-3 gap-3 items-end">
@@ -464,8 +472,8 @@ function App(): React.JSX.Element {
 
           {/* PANEL DE VISTA PREVIA Y ACCIONES */}
           <div className={`lg:col-span-2 bg-slate-800 p-6 rounded-lg shadow-md transition-opacity duration-300 flex flex-col justify-center ${previewCard ? 'opacity-100' : 'opacity-50'}`}>
-            <h2 className="text-xl font-semibold mb-4 text-green-400">
-              2. Confirmar y Añadir
+            <h2 className="text-xl font-semibold mb-4 text-green-400 text-center">
+              Añadir carta
             </h2>
 
             {previewCard ? (
@@ -526,8 +534,6 @@ function App(): React.JSX.Element {
               <div className="flex items-center justify-center h-full min-h-[250px] border-2 border-dashed border-slate-600 rounded-lg">
                 <p className="text-gray-500 italic text-center p-4">
                   Busca una carta a la izquierda para ver la vista previa aquí.
-                  <br />
-                  Se recomienda usar Set y Número para mayor precisión.
                 </p>
               </div>
             )}
